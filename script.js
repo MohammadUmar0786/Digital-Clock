@@ -1,6 +1,7 @@
 setInterval(()=>{
-    const container = document.getElementById('container');
-    container.innerHTML = new Date().toLocaleTimeString();
+    const head = document.getElementById('TimeText');
+    TimeText.innerHTML = new Date().toLocaleTimeString();
+
      
     var r = Math.floor(Math.random()*256);
     var g = Math.floor(Math.random()*256);
@@ -8,6 +9,6 @@ setInterval(()=>{
 
     UpdatedColour = 'rgb(' + r + ',' + g + ',' + b + ')';
     
-    container.style.color = UpdatedColour;
+    TimeText.style.color = UpdatedColour;
 }, 1000)
 
